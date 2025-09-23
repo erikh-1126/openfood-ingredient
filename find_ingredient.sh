@@ -1,4 +1,3 @@
-cat > find_ingredient.sh <<'EOF'
 #!/usr/bin/env bash
 # Usage: ./find_ingredient.sh -i "<ingredient>" -d /path/to/folder
 # Input: products.csv (TSV) must exist inside the folder.
@@ -50,5 +49,3 @@ echo "----"
 echo "Found ${count} product(s) containing: \"${INGREDIENT}\""
 
 rm -f "$tmp_matches"
-
-EOF
